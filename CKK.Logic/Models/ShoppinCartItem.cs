@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CKK.Logic.Models
 {
-    internal class ShoppingCartItem
+    public class ShoppingCartItem
     {
         private Product _product;
         private int _quantity;
@@ -31,6 +31,10 @@ namespace CKK.Logic.Models
         public void SetProduct(Product product)
         {
             _product=product;
+        }
+         public decimal GetTotal()
+        {
+            return _quantity * _product.GetPrice();
         }
     }
 }
