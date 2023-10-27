@@ -9,10 +9,10 @@ namespace CKK.Logic.Models
     public class Store
     {
         private int _id;
-        private string _name;  
-        private Product _product1;
-        private Product _product2;
-        private Product _product3; 
+        private string _name = String.Empty;
+        private Product? _product1;
+        private Product? _product2;
+        private Product? _product3; 
         public int GetId()
         {
             return _id;
